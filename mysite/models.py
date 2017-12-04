@@ -83,7 +83,7 @@ class Evenement(models.Model):
 		return self.evenement
 
 	def get_absolute_url(self):
-		return reverse('plateforme:evenement-detail', kwargs={'pk': self.pk})
+		return reverse('mysite:evenement-detail', kwargs={'pk': self.pk})
 
 
 	class Meta:
@@ -105,7 +105,7 @@ class Annonce(models.Model):
 		return self.titre
 
 	def get_absolute_url(self):
-		return reverse('plateforme:annonce-detail', kwargs={'pk': self.pk})
+		return reverse('mysite:annonce-detail', kwargs={'pk': self.pk})
 
 
 	class Meta:
